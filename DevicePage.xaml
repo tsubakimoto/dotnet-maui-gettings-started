@@ -10,9 +10,24 @@
             VerticalOptions="Center">
 
             <Label 
-                Text="This is your device information."
+                Text="Device information"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label 
+                x:Name="DisplayDeviceLabel"
+                Text=""
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="battery."
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button 
+                x:Name="MainBtn"
+                Text="Back to main"
+                SemanticProperties.Hint="Back to main"
+                Clicked="OnBackToMainClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
