@@ -16,15 +16,15 @@
                 HorizontalOptions="Center" />
                 
             <Label 
-                Text="Hello, World!"
+                Text="Hello, MAUI Sample!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
             
             <Label 
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="This app is tsubakimoto's sample."
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="This app is tsubakimoto's sample."
                 FontSize="18"
                 HorizontalOptions="Center" />
 
