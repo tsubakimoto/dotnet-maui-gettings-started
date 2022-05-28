@@ -15,7 +15,7 @@
 		<ApplicationTitle>MauiSamples</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.mauisamples</ApplicationId>
+		<ApplicationId>dev.tsubakimoto.mauisamples</ApplicationId>
 		<ApplicationIdGuid>3d4d08c9-079c-426c-bb30-85e40f8d6b18</ApplicationIdGuid>
 
 		<!-- Versions -->
