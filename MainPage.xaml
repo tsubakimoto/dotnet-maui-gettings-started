@@ -35,6 +35,13 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Button 
+                x:Name="DeviceBtn"
+                Text="Show device"
+                SemanticProperties.Hint="Show your device information"
+                Clicked="OnShowDeviceClicked"
+                HorizontalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
  
