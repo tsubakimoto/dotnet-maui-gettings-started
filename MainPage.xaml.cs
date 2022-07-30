@@ -20,10 +20,5 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
-
-    private async void OnShowDeviceClicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new DevicePage());
-    }
 }
 
