@@ -20,6 +20,11 @@
             Route="MainPage" />
     </FlyoutItem>
 
+    <FlyoutItem Title="Battery">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:BatteryPage}" />
+    </FlyoutItem>
+
     <FlyoutItem Title="Device">
         <ShellContent
             ContentTemplate="{DataTemplate local:DevicePage}" />
