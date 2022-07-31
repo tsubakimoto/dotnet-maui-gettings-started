@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiSamples.Pages.WebViewPage"
+             Title="WebViewPage">
+
+    <StackLayout
+        Margin="20"
+        Orientation="Vertical"
+        HorizontalOptions="Center">
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+
+            <!-- https://docs.microsoft.com/ja-jp/dotnet/maui/user-interface/controls/entry -->
+            <Entry
+                Grid.Column="0"
+                x:Name="WebViewUrl"
+                Text="https://docs.microsoft.com/dotnet/maui"
+                Keyboard="Url"
+                ReturnType="Default"
+                Completed="WebViewUrl_Completed" />
+
+            <!-- https://docs.microsoft.com/ja-jp/dotnet/maui/user-interface/controls/button -->
+            <Button
+                Grid.Column="1"
+                x:Name="GoButton"
+                Text="Go"
+                Clicked="GoButton_Clicked" />
+
+            <Button
+                Grid.Column="2"
+                x:Name="ReloadButton"
+                Text="Reload"
+                Clicked="ReloadButton_Clicked" />
+        </Grid>
+
+        <!-- A WebView must specify its HeightRequest and WidthRequest properties when contained in a HorizontalStackLayout, StackLayout, or VerticalStackLayout.
+             If you fail to specify these properties, the WebView will not render. -->
+        <WebView
+            x:Name="MainWebView"
+            HeightRequest="1000"
+            WidthRequest="1000"
+            Margin="20"
+            Navigated="MainWebView_Navigated" />
+        
+    </StackLayout>
+    
+</ContentPage>

@@ -30,4 +30,9 @@
             ContentTemplate="{DataTemplate local:DevicePage}" />
     </FlyoutItem>
 
+    <FlyoutItem Title="WebView">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:WebViewPage}" />
+    </FlyoutItem>
+
 </Shell>
