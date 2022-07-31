@@ -3,12 +3,26 @@
     x:Class="MauiSamples.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiSamples"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:MauiSamples.Pages">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader>
+        <Grid
+            HeightRequest="100"
+            BackgroundColor="DarkSlateBlue">
+            <Label>.NET MAUI Samples</Label>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Main">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Device">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:DevicePage}" />
+    </FlyoutItem>
 
 </Shell>

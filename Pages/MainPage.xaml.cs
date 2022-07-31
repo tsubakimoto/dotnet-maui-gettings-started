@@ -1,4 +1,4 @@
-﻿namespace MauiSamples;
+﻿namespace MauiSamples.Pages;
 
 public partial class MainPage : ContentPage
 {
